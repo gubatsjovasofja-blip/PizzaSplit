@@ -28,6 +28,16 @@
         <TextBlock x:Name="ErrorTextBlock" HorizontalAlignment="Left" Margin="52,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" FontSize="14" Foreground="#FFE06262" Grid.Column="4" Height="19" Width="304" FontFamily="Dubai" RenderTransformOrigin="0.47,-0.189"/>
         <TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Left" Margin="153,34,0,0" TextWrapping="Wrap" Text="PizzaSplit" VerticalAlignment="Top" Height="40" Width="119" FontSize="26" Grid.Column="4" FontFamily="Dubai" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="138,78,0,0" TextWrapping="Wrap" Text="Jaga arve lihtsalt ja kiiresti" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" Foreground="#FF595757" Grid.Column="4" Height="17" Width="161" FontFamily="Dubai"/>
+        <Button x:Name="ClearButton" Grid.Column="4" Content="Tühjenda" HorizontalAlignment="Left" Margin="232,58,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Width="107" RenderTransformOrigin="0.5,0.5" Background="#FFF7FFA2" FontFamily="Dubai" Click="ClearButton_Click" FontSize="15" Foreground="#FF333333" BorderBrush="#FFCDDAFF">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.145"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
 
     </Grid>
 </Window>
