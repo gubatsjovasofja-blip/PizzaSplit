@@ -1,0 +1,43 @@
+﻿<Window x:Class="PizzaSPlit.WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaSPlit.WpfApp"
+        mc:Ignorable="d"
+        Title="PizzaSplit" Height="428" Width="635" WindowStartupLocation="CenterScreen" Background="White" Foreground="Black">
+    <Grid Margin="0,0,0,-6" Cursor="" Background="#FFCDDAFF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="536*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="125*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="52,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="15" Height="29" Grid.Column="4" Foreground="#FF333333" FontFamily="Dubai"><Run Text="Tellimuse summa ("/><Run Text="€)"/><Run Language="ru-ru" Text=":"/></TextBlock>
+        <TextBox x:Name="TotalTextBox" HorizontalAlignment="Left" Margin="218,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Height="29" Background="White" Grid.Column="4" Foreground="#FF333333" BorderBrush="#FFCDDAFF" SelectionTextBrush="#FF845050" TextChanged="TotalTextBox_TextChanged" FontFamily="Dubai"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,155,0,0" TextWrapping="Wrap" Text="Sööjate arv:" VerticalAlignment="Top" Width="145" FontSize="15" Height="29" Grid.Column="4" Foreground="#FF333333" FontFamily="Dubai" Grid.RowSpan="2"/>
+        <TextBox x:Name="PeopleTextBox" HorizontalAlignment="Left" Margin="218,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Height="29" Background="White" Grid.Column="4" Foreground="#FF333333" BorderBrush="#FFCDDAFF" SelectionTextBrush="#FF845050" FontFamily="Dubai" Grid.RowSpan="2"/>
+        <CheckBox x:Name="TipCheckBox" Content="Lisa 10% jootraha" HorizontalAlignment="Left" Margin="52,22,0,0" VerticalAlignment="Top" FontSize="15" Grid.Column="4" Height="19" Width="137" Foreground="#FF333333" FontFamily="Dubai" Grid.Row="1"/>
+        <Button x:Name="CalculateButton" Content="Arvuta minu osa" HorizontalAlignment="Left" Margin="64,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.389,0.343" Click="CalculateButton_Click" Width="140" Grid.Row="1" Height="34" FontSize="15" Background="#FFEBA8E2" Foreground="#FF333333" BorderBrush="#FFEBA8E2" Grid.Column="4" FontFamily="Dubai"/>
+        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="105,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" FontSize="18" FontWeight="Bold" Foreground="#FF47D17B" Grid.Column="4" Height="24" Width="227" FontFamily="Dubai Medium"/>
+        <TextBlock x:Name="ErrorTextBlock" HorizontalAlignment="Left" Margin="52,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" FontSize="14" Foreground="#FFE06262" Grid.Column="4" Height="19" Width="304" FontFamily="Dubai" RenderTransformOrigin="0.47,-0.189"/>
+        <Button x:Name="ClearButton" Content="Tühjenda" HorizontalAlignment="Left" Margin="224,59,0,0" VerticalAlignment="Top" Width="117" Click="ClearButton_Click" RenderTransformOrigin="0.5,0.5" Height="35" Background="#FFFDF496" Grid.Row="1" FontSize="15" Grid.Column="4" BorderBrush="#FFFDF496" Foreground="Black" FontFamily="Dubai">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.473"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Left" Margin="153,34,0,0" TextWrapping="Wrap" Text="PizzaSplit" VerticalAlignment="Top" Height="40" Width="119" FontSize="26" Grid.Column="4" FontFamily="Dubai" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="138,78,0,0" TextWrapping="Wrap" Text="Jaga arve lihtsalt ja kiiresti" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" Foreground="#FF595757" Grid.Column="4" Height="17" Width="161" FontFamily="Dubai"/>
+
+    </Grid>
+</Window>
