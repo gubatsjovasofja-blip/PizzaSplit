@@ -26,16 +26,6 @@
         <Button x:Name="CalculateButton" Content="Arvuta minu osa" HorizontalAlignment="Left" Margin="64,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.389,0.343" Click="CalculateButton_Click" Width="140" Grid.Row="1" Height="34" FontSize="15" Background="#FFEBA8E2" Foreground="#FF333333" BorderBrush="#FFEBA8E2" Grid.Column="4" FontFamily="Dubai"/>
         <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="105,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" FontSize="18" FontWeight="Bold" Foreground="#FF47D17B" Grid.Column="4" Height="24" Width="227" FontFamily="Dubai Medium"/>
         <TextBlock x:Name="ErrorTextBlock" HorizontalAlignment="Left" Margin="52,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" FontSize="14" Foreground="#FFE06262" Grid.Column="4" Height="19" Width="304" FontFamily="Dubai" RenderTransformOrigin="0.47,-0.189"/>
-        <Button x:Name="ClearButton" Content="Tühjenda" HorizontalAlignment="Left" Margin="224,59,0,0" VerticalAlignment="Top" Width="117" Click="ClearButton_Click" RenderTransformOrigin="0.5,0.5" Height="35" Background="#FFFDF496" Grid.Row="1" FontSize="15" Grid.Column="4" BorderBrush="#FFFDF496" Foreground="Black" FontFamily="Dubai">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.473"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
         <TextBlock x:Name="TitleTextBlock" HorizontalAlignment="Left" Margin="153,34,0,0" TextWrapping="Wrap" Text="PizzaSplit" VerticalAlignment="Top" Height="40" Width="119" FontSize="26" Grid.Column="4" FontFamily="Dubai" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="138,78,0,0" TextWrapping="Wrap" Text="Jaga arve lihtsalt ja kiiresti" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" Foreground="#FF595757" Grid.Column="4" Height="17" Width="161" FontFamily="Dubai"/>
 

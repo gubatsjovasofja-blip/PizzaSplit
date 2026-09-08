@@ -65,15 +65,7 @@ namespace PizzaSPlit.WpfApp
             }
         }
 
-        private void ClearButton_Click(object sender, RoutedEventArgs e)
-        {
-            TotalTextBox.Clear();
-            PeopleTextBox.Clear();
-            TipCheckBox.IsChecked = false;
-            ResultTextBlock.Text = "";
-            ErrorTextBlock.Text = "";
-            TotalTextBox.Focus();
-        }
+       
 
         private void TotalTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
